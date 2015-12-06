@@ -1,0 +1,82 @@
+.modal-backdrop{
+    bottom:0;
+}
+
+#modalHeader{
+    float: right;
+    margin-right: 27px;
+    color: grey;
+    cursor: pointer;
+}
+
+.modal-header{
+    padding: 10px 2px 0px 15px;
+}
+
+.modal-body{
+    padding-left: 0px;
+}
+
+#buttonGroup{
+    text-align: right;
+}
+
+/*
+.ng-touched.ng-invalid-required {
+    border-color: red;
+}*/
+
+#createForm.ng-submitted input.ng-invalid, #createForm input.ng-dirty.ng-invalid{
+    border-color: red;
+    background-color: #ffdfe4;
+}
+
+#createForm input.ng-dirty.ng-valid{
+    background-color: #d0ffcd;
+    border-color: darkgreen;
+}
+
+.tooltip{
+    width: 150px;
+}
+
+.app-modal-window .modal-dialog{
+    width: 500px;
+}
+
+.input-valid{
+    background-color: lightgreen;
+}
+
+img.icon-size{
+    width: 13px;
+    height: 13px;
+}
+
+.error-msg{
+    margin: 5px 0px -10px 0px;
+    font-size: 9pt;
+    color: indianred;
+    font-weight: 500;
+}
+
+.icon-margin{
+    margin-top: -3px;
+}
+
+.toast-success {
+    text-align: center;
+    background-color: mediumspringgreen;
+    border: solid forestgreen thin;
+}
+
+.toast-top-center {
+    top: 25px;
+    right: 0;
+    width: 100%;
+}
+
+.navbar{
+    /*background-color: red;*/
+    box-shadow: 0px 0px 20px #888888;;
+}

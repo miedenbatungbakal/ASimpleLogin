@@ -1,0 +1,55 @@
+<div class="container">
+    <p><br /></p>
+    <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <div class="page-header">
+                        <h3>Login</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <div ng-show="loginCtrl.errMsg" class="text-center text-danger" role="alert">
+                            <div class="alert alert-danger" role="alert">
+                                <span ng-bind="loginCtrl.errMsg"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form role="form" ng-submit="loginCtrl.login()">
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username" ng-model="loginCtrl.user.username" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password" ng-model="loginCtrl.user.password" />
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>  Login</button>
+                        <button type="button" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</button>
+                        <button type="button" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</button>
+                    </form>
+
+                    <hr />
+
+                    <div class="help-block">
+                        <div>
+                            <small>Don't have an account yet? <a ng-click="loginCtrl.createProfileModalForm()" href="#">Sign Up </a> now!</small>
+                        </div>
+
+                        <div>
+                            <small>Forgot Password? <a href="#"> Click here</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

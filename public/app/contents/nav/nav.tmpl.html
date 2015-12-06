@@ -1,0 +1,36 @@
+<nav id="navbar-example" class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" ng-click="navCtrl.isCollapsed = !navCtrl.isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Just Nothing</a>
+        </div>
+        <div collapse="navCtrl.isCollapsed" class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active">
+                    <a ui-sref="portfolio.contents.home" href="#" role="button">Home</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="portfolio.contents.allUsers" href="#" role="button">All Users</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li dropdown>
+                    <a href="#" id="drop3" role="button" dropdown-toggle>Hi, <span ng-bind="navCtrl.username"></span>! <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                        <li role="presentation"><a role="menuitem" href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" href="#" ng-click="navCtrl.logout()"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--
+<h1>Hi {{navCtrl.username}}!</h1>
+<button class="btn btn-link" ng-click="navCtrl.logout()">Logout</button>-->

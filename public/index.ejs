@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="main">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link href="third_party/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="third_party/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="third_party/css/angular-toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="app/assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body ng-controller="MainCtrl as mainCtrl">
+    <!--<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">-->
+                <div class="container">
+                    <div ui-view="navigationBar" class="row">
+
+                    </div>
+
+                    <div class="row">
+                        <div ui-view="mainContent">
+
+                        </div>
+                    </div>
+
+                    <div ui-view="footer" class="row">
+
+                    </div>
+                </div>
+            <!--</div>
+        </div>
+    </div>-->
+
+    <script src="third_party/js/jquery-1.11.2.min.js"></script>
+    <!--<script src="third_party/js/bootstrap.min.js"></script>-->
+    <script src="third_party/js/lodash.min.js"></script>
+    <script src="third_party/js/angular.min.js"></script>
+    <script src="third_party/js/angular-ui-router.min.js"></script>
+    <script src="third_party/js/angular-animate.js"></script>
+    <script src="third_party/js/angular-messages.min.js"></script>
+    <script src="third_party/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script src="third_party/js/angular-toastr.tpls.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/contents/contents.js"></script>
+    <script src="app/login/login.js"></script>
+    <script src="app/profile/profile.js"></script>
+    <script src="app/contents/nav/nav-content/home/home.js"></script>
+    <script src="app/contents/nav/nav.js"></script>
+    <script src="app/contents/nav/nav-content/all-users/all-users.js"></script>
+    <script src="app/profile/create/profile-create.js"></script>
+</body>
+</html>
